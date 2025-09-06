@@ -2,6 +2,7 @@ from display import DisplayManager
 import jdatetime
 import time
 
+
 # ساخت شیء نمایشگر
 disp = DisplayManager()
 
