@@ -1,35 +1,24 @@
-# Raspberry Pi ILI9341 Display Manager (Persian Support)
-# مدیریت نمایشگر ILI9341 رزبری‌پای با پشتیبانی فارسی
+# Raspberry Pi ILI9341 Display Manager
+# مدیریت نمایشگر ILI9341 رزبری‌پای
+
+این پروژه یک کلاس ساده به نام **DisplayManager** فراهم می‌کند برای کار با نمایشگر ILI9341 روی Raspberry Pi.  
+با این کلاس می‌توانید تصویر بکگراند و متن فارسی (با اعداد فارسی) را روی نمایشگر نشان دهید.  
+
+This project provides a simple **DisplayManager** class to work with an ILI9341 LCD on Raspberry Pi.  
+It supports showing background images and Persian text (with Persian digits) on the screen.  
 
 ---
-## 📝 How to write Persian text | چطور فارسی بنویسیم
-
-- All Python files must be saved as **UTF-8**.  
-  همه فایل‌های پایتون باید با **UTF-8** ذخیره شوند.  
-
-- At the top of each `.py` file, add:  
-  بالای هر فایل `.py` این خط را بگذارید:
-  ```python
-  # -*- coding: utf-8 -*-
 
 ## ✨ Features | امکانات
-- Show full background image | نمایش تصویر بکگراند
-- Draw text and numbers (with Persian/Arabic support) | نمایش متن و عدد فارسی
-- Automatic English→Persian digits conversion | تبدیل خودکار اعداد انگلیسی به فارسی
-- Proper Persian text shaping (with `arabic-reshaper` + `python-bidi`)  
-  پشتیبانی از اتصال حروف و نمایش راست‌به‌چپ
-- Optional background box for text | نمایش متن با یا بدون بکگراند
-- Horizontal flip (Mirror) | فلیپ افقی تصویر و متن
+- Display background image | نمایش بکگراند
+- Show Persian text and numbers | نمایش متن و عدد فارسی
+- Automatic English→Persian digit conversion | تبدیل خودکار اعداد انگلیسی به فارسی
+- Optional background box for text | متن با یا بدون بکگراند
+- Horizontal flip (mirror) | فلیپ افقی
 
 ---
 
 ## 🛠 Requirements | پیش‌نیازها
-
-### Hardware | سخت‌افزار
-- Raspberry Pi (recommended 3/4) | رزبری‌پای (مدل ۳ یا ۴ پیشنهاد می‌شود)
-- ILI9341 LCD connected via SPI | نمایشگر ILI9341 با ارتباط SPI
-
-### Software | نرم‌افزار
 ```bash
 sudo apt-get update
 sudo apt-get install python3-pip python3-pil python3-spidev python3-rpi.gpio
